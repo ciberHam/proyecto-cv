@@ -1,0 +1,211 @@
+*
+{
+	font-size:125%;
+	font-family:Lora;
+	margin: 0px;
+	padding: 0px;
+	content: "";
+	display: block;
+    clear: both;
+	transition-property: display;
+    transition-duration: 0.5s;
+}
+
+#infoPersonal{
+	display:none;
+}
+#Habilidades{
+	display:none;
+}
+#fEducativa{
+	display:none;
+}
+#Habilidades2{
+	display:none;
+}
+#dLaboral{
+	display:none;
+}
+
+title{
+	display:none;
+}
+#imgPerfil{
+	border-radius:5px;
+	width:auto;
+	height:15em;
+	display:block;
+	margin:1% auto;
+}
+#imgPerfil:hover{
+	  transition-property: height;
+      transition-duration: 0.5s;
+	  height:20em;
+}
+
+h1{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	font-size: 2em;
+	text-shadow: 0px 0px 40px black;
+ }
+nav{
+	background-color:rgba(0,80,201,.6);
+	border-radius:10px;
+	margin:3%;
+	font-size: 1.2em;
+}
+nav ol{
+	display:block;
+	padding:1%;
+	background-color:rgb(0,80,201,);
+	border-radius:10px;
+}
+nav li{
+	margin-top: 5%;
+	text-align:center;
+	
+}
+
+nav li:hover {
+  transition-property: background-color;
+  transition-duration: 1s;
+  border-radius:5px;
+  background-color: rgb(134, 229, 255);
+  color: black;
+}
+
+ .contContenido{ /* da el color de fondo y caracteristicas a la caja contenedora de cada seccion */
+	 border-radius:5px;
+	 background-color:rgba(0,80,201,.6);
+	 padding:1%;
+	 box-shadow: 0px 0px 10px black;
+	 opacity:1;
+ }
+body{ /* estilo de fondo*/
+	background-color:rgb(0, 129, 201);
+	background-image: url(archive/web-design-website-coding-concept.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.main{
+	padding:1%;
+	border-radius:10px;
+	background-color: rgba(0,100,201,.8);
+	box-shadow: 0px 0px 40px black;
+}
+
+ #imagenCont{
+	 justify-content:center;
+ }
+nav h3{
+	text-shadow: 0px 0px 40px black;
+	width:200px;
+	margin-top:20px;
+	margin-right:auto;
+	margin-left:auto;
+	text-align:center;
+	font-size: 2em;
+}
+body div{
+	margin:1%;
+}
+p{
+	padding:1%;
+}
+
+
+
+#general{ /* diseño de la estructura de la pagina con grid*/
+	display:grid;
+	grid-template-rows: 10rem auto 200px;
+	grid-template-columns: 1fr 1fr 3fr 1fr;
+	grid-template-areas:
+		"header header  header header"
+		"nav    main    main   .     "
+		"footer footer footer footer";
+}
+
+#general header {
+	display:block;
+	grid-area: header;
+	background-color:rgba(0,80,201,.6);
+	width:100%;
+	height:auto;
+
+}
+
+#general nav {
+	grid-area: nav;
+	box-shadow: 0px 0px 40px black;
+}
+#general .main {
+	grid-area: main;
+}
+#general footer {
+	grid-area: footer;
+}
+
+
+@media only screen and (max-width: 900px) {
+	*{
+		font-size:100%;
+	}
+	body{
+		justify-content: center;
+		background-size: cover;
+	 }
+	 img{
+		border-radius:5px;
+	 }
+	 p{
+		display:block;
+	 }
+	#general {
+		display:inline;
+		width:100%;
+	}
+	h1{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	}
+	nav ol{
+		display:none;
+	}
+	nav{
+		position:relative;
+		margin:4% 2%;
+	}
+	nav h3{
+		padding:3%;
+		text-align:center;
+		font-size:1em;
+	}
+	nav li{
+		margin:1%;
+		text-align:center;
+		padding:1%;
+	}
+	img{
+		width:auto;
+		height:10%;
+	}
+
+}
+/*@keyframes franjaAnimada{
+	0%{
+		height:0px;
+		opacity: 0;
+	}
+	50%{
+		opacity:.4;
+	}
+	100%{
+		opacity:1;
+		height:100%;
+	}
+}*/
