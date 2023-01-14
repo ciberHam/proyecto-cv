@@ -1,8 +1,8 @@
-
+﻿
 let posicionMenu=true;
 const claseContenido = document.getElementsByClassName("contContenido");
 
-function cambiadorMenu(){
+ function cambiadorMenu(){
 	
 	if(posicionMenu==false){
 		document.getElementById("ocultarMenu").style.display = "none";
