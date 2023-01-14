@@ -11,20 +11,36 @@
     transition-duration: 0.5s;
 }
 
+.contContenido li{
+	  display: flex;
+	  flex-direction: row;
+	  align-items: center;
+}
+.contContenido li p{
+	font-size:100%;
+	display:inline;
+	text-align:center;
+
+}
+.icoRank{
+	display:inline;
+	height:40px;
+	width:auto;
+}
 #infoPersonal{
-	display:none;
+	display:block;
 }
 #Habilidades{
-	display:none;
+	display:block;
 }
 #fEducativa{
-	display:none;
+	display:block;
 }
 #Habilidades2{
-	display:none;
+	display:block;
 }
 #dLaboral{
-	display:none;
+	display:block;
 }
 
 title{
@@ -53,7 +69,7 @@ h1{
 nav{
 	background-color:rgba(0,80,201,.6);
 	border-radius:10px;
-	margin:3%;
+	margin:0% 2%;
 	font-size: 1.2em;
 }
 nav ol{
@@ -63,6 +79,7 @@ nav ol{
 	border-radius:10px;
 }
 nav li{
+	font-size:90%;
 	margin-top: 5%;
 	text-align:center;
 	
@@ -81,7 +98,7 @@ nav li:hover {
 	 background-color:rgba(0,80,201,.6);
 	 padding:1%;
 	 box-shadow: 0px 0px 10px black;
-	 opacity:1;
+	 margin-top: 1%;
  }
 body{ /* estilo de fondo*/
 	background-color:rgb(0, 129, 201);
@@ -92,13 +109,14 @@ body{ /* estilo de fondo*/
 }
 
 .main{
-	padding:1%;
+	padding:0 1% 1%;
 	border-radius:10px;
 	background-color: rgba(0,100,201,.8);
 	box-shadow: 0px 0px 40px black;
 }
 
  #imagenCont{
+	 height:70vh;
 	 justify-content:center;
  }
 nav h3{
@@ -110,9 +128,7 @@ nav h3{
 	text-align:center;
 	font-size: 2em;
 }
-body div{
-	margin:1%;
-}
+
 p{
 	padding:1%;
 }
@@ -121,7 +137,7 @@ p{
 
 #general{ /* diseño de la estructura de la pagina con grid*/
 	display:grid;
-	grid-template-rows: 10rem auto 200px;
+	grid-template-rows: 8.5rem auto 200px;
 	grid-template-columns: 1fr 1fr 3fr 1fr;
 	grid-template-areas:
 		"header header  header header"
@@ -130,12 +146,13 @@ p{
 }
 
 #general header {
-	display:block;
 	grid-area: header;
 	background-color:rgba(0,80,201,.6);
 	width:100%;
-	height:auto;
-
+	height:20vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 #general nav {
@@ -164,6 +181,12 @@ p{
 	 p{
 		display:block;
 	 }
+	 .contContenido{
+		 margin: 10% 0;
+	 }
+	 .main{
+		padding:0% 0% 0%;
+	}
 	#general {
 		display:inline;
 		width:100%;
