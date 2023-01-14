@@ -10,7 +10,9 @@
 	transition-property: display;
     transition-duration: 0.5s;
 }
-
+#ocultarMenu{
+	display:none;
+}
 .contContenido li{
 	  display: flex;
 	  flex-direction: row;
@@ -89,12 +91,14 @@ h1{
  }
 nav{
 	position:fixed;
-	top:25%;
+	display:flex;
+	flex-direction:column;
+	top:0.09%;
 	background-color:rgba(46, 150, 99,.6);
 	border-radius:10px;
 	font-size: 1.2em;
 	width:15%;
-	margin: 1%;
+	margin: 2%;
 }
 nav ol{
 	display:block;
@@ -146,7 +150,7 @@ body{ /* estilo de fondo*/
 	 display:flex;
 	 flex-direction:row;
 	 justify-content:center;
-	 height:62vh;
+	 height:72vh;
 	 justify-content:center;
  }
 nav h3{
@@ -168,20 +172,20 @@ p{
 #general{ /* diseño de la estructura de la pagina con grid*/
 	display:grid;
 	grid-template-rows: 8.5rem auto 200px;
-	grid-template-columns: 1fr 1fr 3fr 1fr;
+	grid-template-columns: 1.2fr 2fr 2fr 2fr;
 	grid-template-areas:
-		"header main   main   main"
-		"nav    main   main   main"
+		"main main   main   main"
+		"main    main   main   main"
 		"footer footer footer footer";
 }
 
 #general header {
+	display:none;
 	grid-area: header;
 	background-color:linear-gradient(90deg, rgb(46, 150, 99), rgb(109, 20, 148));
 	width:95%;
 	border-radius:10px;
 	height:20vh;
-	display: flex;
 	flex-direction: row;
 	align-items: center;
 	box-shadow: 0px 0px 10px black;
@@ -244,7 +248,7 @@ p{
 		padding:0%
 	}
 	#general {
-		display:inline;
+		display:block;
 		width:100%;
 	}
 	h1{

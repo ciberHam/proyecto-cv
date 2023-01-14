@@ -1,5 +1,5 @@
 
-let posicionMenu=false;
+let posicionMenu=true;
 const claseContenido = document.getElementsByClassName("contContenido");
 
 function cambiadorMenu(){
