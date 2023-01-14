@@ -17,7 +17,7 @@ function principal(){
 		document.getElementById("imagenCont").style.display = "none";
 		posicionMenu=true;
 	}else {
-		document.getElementById("imagenCont").style.display = "block";
+		document.getElementById("imagenCont").style.display = "flex";
 		posicionMenu=false;
 	}
 }

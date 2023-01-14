@@ -17,10 +17,23 @@
 	  align-items: center;
 }
 .contContenido li p{
+	padding: 2%;
 	font-size:100%;
 	display:inline;
 	text-align:center;
 
+}
+.footerCont{
+	padding:auto;
+	display:flex;
+	justify-content:center;
+}
+.footerCont h3{
+	display:flex;
+	margin:1%;
+}
+h2{
+	margin:5% 0;
 }
 .icoRank{
 	display:inline;
@@ -44,14 +57,15 @@
 }
 
 title{
-	display:none;
+	visibility:hidden;
+	/*display:none;*/
 }
 #imgPerfil{
 	border-radius:5px;
 	width:auto;
 	height:15em;
 	display:block;
-	margin:1% auto;
+	margin: auto;
 }
 #imgPerfil:hover{
 	  transition-property: height;
@@ -60,14 +74,14 @@ title{
 }
 
 h1{
-	width:100%;
+	width:90%;
 	margin:auto;
 	text-align:center;
 	font-size: 2em;
 	text-shadow: 0px 0px 40px black;
  }
 nav{
-	background-color:rgba(0,80,201,.6);
+	background-color:rgba(46, 150, 99,.6);
 	border-radius:10px;
 	margin:0% 2%;
 	font-size: 1.2em;
@@ -89,20 +103,23 @@ nav li:hover {
   transition-property: background-color;
   transition-duration: 1s;
   border-radius:5px;
-  background-color: rgb(134, 229, 255);
+  background: linear-gradient(90deg, rgb(46, 150, 99), rgb(109, 20, 148));
   color: black;
 }
 
  .contContenido{ /* da el color de fondo y caracteristicas a la caja contenedora de cada seccion */
 	 border-radius:5px;
-	 background-color:rgba(0,80,201,.6);
-	 padding:1%;
+	 
+	background: linear-gradient(90deg, rgb(46, 150, 99), rgb(109, 20, 148));
+
+
+	 padding:10%;
 	 box-shadow: 0px 0px 10px black;
 	 margin-top: 1%;
  }
 body{ /* estilo de fondo*/
-	background-color:rgb(0, 129, 201);
-	background-image: url(archive/web-design-website-coding-concept2.png);
+	background:linear-gradient(90deg, rgb(46, 150, 99), rgb(109, 20, 148));
+	/*background-image: url(archive/web-design-website-coding-concept2.png);*/
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -111,12 +128,15 @@ body{ /* estilo de fondo*/
 .main{
 	padding:0 1% 1%;
 	border-radius:10px;
-	background-color: rgba(0,100,201,.8);
+	/*background-color: rgba(0,100,201,.8);*/
 	box-shadow: 0px 0px 40px black;
 }
 
  #imagenCont{
-	 height:70vh;
+	 display:flex;
+	 flex-direction:row;
+	 justify-content:center;
+	 height:50vh;
 	 justify-content:center;
  }
 nav h3{
@@ -130,7 +150,8 @@ nav h3{
 }
 
 p{
-	padding:1%;
+	margin:auto;
+	padding:5%;
 }
 
 
@@ -140,19 +161,22 @@ p{
 	grid-template-rows: 8.5rem auto 200px;
 	grid-template-columns: 1fr 1fr 3fr 1fr;
 	grid-template-areas:
-		"header header  header header"
-		"nav    main    main   .     "
+		"header main   main   main"
+		"nav    main   main   main"
 		"footer footer footer footer";
 }
 
 #general header {
 	grid-area: header;
-	background-color:rgba(0,80,201,.6);
-	width:100%;
+	background-color:linear-gradient(90deg, rgb(46, 150, 99), rgb(109, 20, 148));
+	width:95%;
+	border-radius:10px;
 	height:20vh;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	box-shadow: 0px 0px 40px black;
+	margin:1% 3%;
 }
 
 #general nav {
@@ -163,6 +187,7 @@ p{
 	grid-area: main;
 }
 #general footer {
+	padding:10%;
 	grid-area: footer;
 }
 
@@ -175,17 +200,36 @@ p{
 		justify-content: center;
 		background-size: cover;
 	 }
-	 img{
+	 #imgPerfil:hover{
+	  transition-property: height;
+      transition-duration: 0.5s;
+	  height:12em;
+	}
+	#imgPerfil{	
+		height:10em;
+	}
+	#imagenCont img{
 		border-radius:5px;
+		display:block;
+		margin:auto;
 	 }
 	 p{
 		display:block;
+		margin:auto;
 	 }
 	 .contContenido{
 		 margin: 10% 0;
 	 }
+	 #imagenCont{
+		margin:0;
+		padding:15%;
+		justify-content:center;
+		display:inline-flex;
+		flex-direction:column;
+		height:auto;
+	 }
 	 .main{
-		padding:0% 0% 0%;
+		padding:0%
 	}
 	#general {
 		display:inline;
@@ -201,9 +245,11 @@ p{
 	}
 	nav{
 		position:relative;
-		margin:4% 2%;
+		border-radius:0px;
+		/*margin:4% 2%;*/
 	}
 	nav h3{
+		margin:10% auto;
 		padding:3%;
 		text-align:center;
 		font-size:1em;
@@ -215,20 +261,20 @@ p{
 	}
 	img{
 		width:auto;
-		height:10%;
+		height:10em;
+	}
+	footer{
+		padding:5%;
+	}
+	.footerCont{
+		margin:10%;
+		display:block;
+	}
+	.footerCont h3{
+		text-align:center;
+		margin:auto;
+		display:block;
 	}
 
 }
-/*@keyframes franjaAnimada{
-	0%{
-		height:0px;
-		opacity: 0;
-	}
-	50%{
-		opacity:.4;
-	}
-	100%{
-		opacity:1;
-		height:100%;
-	}
-}*/
+
