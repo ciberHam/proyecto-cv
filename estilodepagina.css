@@ -18,7 +18,7 @@
 }
 .contContenido li p{
 	padding: 2%;
-	font-size:100%;
+	font-size:1em;
 	display:inline;
 	text-align:center;
 
@@ -42,18 +42,24 @@ h2{
 	width:auto;
 }
 #infoPersonal{
+	height:75vh;
 	display:block;
 }
 #Habilidades{
-	display:block;
+	height:auto;
+	display:flex;
+	flex-direction:column;
 }
 #fEducativa{
+	height:75vh;
 	display:block;
 }
 #Habilidades2{
+	height:75vh;
 	display:block;
 }
 #dLaboral{
+	height:75vh;
 	display:block;
 }
 
@@ -82,10 +88,13 @@ h1{
 	text-shadow: 0px 0px 15px white;
  }
 nav{
+	position:fixed;
+	top:25%;
 	background-color:rgba(46, 150, 99,.6);
 	border-radius:10px;
-	margin:0% 2%;
 	font-size: 1.2em;
+	width:15%;
+	margin: 1%;
 }
 nav ol{
 	display:block;
@@ -137,15 +146,13 @@ body{ /* estilo de fondo*/
 	 display:flex;
 	 flex-direction:row;
 	 justify-content:center;
-	 height:75vh;
+	 height:62vh;
 	 justify-content:center;
  }
 nav h3{
 	text-shadow: 0px 0px 40px black;
-	width:200px;
-	margin-top:20px;
-	margin-right:auto;
-	margin-left:auto;
+	width:auto;
+	margin:auto;
 	text-align:center;
 	font-size: 2em;
 }
@@ -186,6 +193,8 @@ p{
 	box-shadow: 0px 0px 10px black;
 }
 #general .main {
+	display:flex;
+	flex-direction:column;
 	grid-area: main;
 }
 #general footer {
@@ -247,6 +256,7 @@ p{
 		display:none;
 	}
 	nav{
+		width:auto;
 		position:relative;
 		border-radius:0px;
 		/*margin:4% 2%;*/
