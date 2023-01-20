@@ -1,0 +1,42 @@
+﻿[
+{
+	"nombreCompleto":"Manuel Alejandro Bravo.",
+	"edad":"31años.",
+	"paisOrigen":"Argentina.",
+	"ciudad":"Laprida, Bs As.",
+	"fechaNacimiento":"23/1/1992",
+	"licenciaConducir":"En tramite."
+},
+{
+	"referenciaLaboral1":"Taller mecánico 'tito berta'.",
+	"referenciaLaboral2":"Productor en Fm Imagen Laprida.",
+	"referenciaLaboral3":"Actividad Autónomo: Taller Mecanico."
+},
+{
+	"habilidadComplementaria1":"Ps6 Nivel Medio.",
+	"habilidadComplementaria2":"Fotografía Nivel Medio-Alto.",
+	"habilidadComplementaria3":"Edicion de audio Nivel Medio-Alto",
+	"habilidadComplementaria4":"Edicion de Video Nivel Medio.",
+	"habilidadComplementaria5":""
+},
+{
+	"eduSecundaria":"EEM Nº1 Fransisco Narcizo Laprida.",
+	"eduIdiomaNativo":"Español Castellano Nativo.",
+	"eduIdiomaSecundario":"Ingles Nivel B2."
+},
+{
+	"nivelHtml":"Básico.",
+	"nivelCss":"Básico.",
+	"nivelJs":"Básico",
+	"frameWBootstrap":"Básico.",
+	"nivelJason":"Básico.",
+	"nivelOfimatica":"Medio."
+},
+{
+		"email":"manu_23_bra@hotmail.com",
+		"fB":"http....",
+		"instagram":"http....",
+		"whattsapp":"+54 2284 553617",
+		"gitHub":"http..."
+}
+]

@@ -10,38 +10,113 @@
 	transition-property: display;
     transition-duration: 0.5s;
 }
+body{ /* estilo de fondo*/
+	background:linear-gradient(90deg, rgb(46, 150, 99), rgb(109, 20, 148));
+	/*background-image: url(archive/web-design-website-coding-concept2.png);*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+title{
+	visibility:hidden;
+	/*display:none;*/
+}
+#general{ /* diseÃ±o de la estructura de la pagina con grid*/
+	display:grid;
+	grid-template-rows: 8.5rem auto 200px;
+	grid-template-columns: 1.2fr 2fr 2fr 2fr;
+	grid-template-areas:
+		"main main   main   main"
+		"main    main   main   main"
+		"footer footer footer footer";
+}
+nav{ /* estilo de menu de nav*/
+	grid-area: nav;
+	box-shadow: 0px 0px 10px black;
+	position:fixed;
+	display:flex;
+	top:0.09%;
+	right:0.3%;
+	background-color:rgba(46, 150, 99,.6);
+	border-radius:10px;
+	font-size: 1.2em;
+	width:15%;
+	margin: 2%;
+}
+nav ol{
+	display:flex;
+	flex-direction:row;
+	padding:auto;
+	background-color:rgb(0,80,201,);
+	border-radius:10px;
+}
+nav li{
+	display:inline;
+	font-size:90%;
+	margin: auto 1%;
+	text-align:center;
+	width:100%;
+}
+
+nav li:hover {
+  transition-property: background-color;
+  transition-duration: 1s;
+  border-radius:5px;
+  /*background: linear-gradient(90deg, rgb(46, 150, 99), rgb(109, 20, 148));*/
+  color: black;
+}
+nav h3{
+	text-shadow: 0px 0px 40px black;
+	width:auto;
+	margin:auto;
+	text-align:center;
+	font-size: 2em;
+}
 #ocultarMenu{
 	display:none;
+}
+/* fin de estilo de menu navegador*/
+
+.icoAnimado{
+	position:fixed;
+	display:inline;
+	height:auto;
+	width:4em;
+}
+h1{
+	width:90%;
+	margin:auto;
+	text-align:center;
+	font-size: 2em;
+	text-shadow: 0px 0px 15px white;
+ }
+h2{
+	font-size:5vh;
+	margin:5% 0;
+}
+#fullname{
+	margin:0;
+	padding:0;
+	display:inline;
 }
 .contContenido li{
 	  display: flex;
 	  flex-direction: row;
 	  align-items: center;
 }
+p{
+	font-size:3vh;
+	margin:auto;
+	padding:5%;
+}
+
+/* estilo del contenido de la pagina*/
 .contContenido li p{
 	padding: 2%;
 	font-size:1em;
 	display:inline;
 	text-align:center;
 
-}
-.footerCont{
-	padding:auto;
-	display:flex;
-	justify-content:center;
-}
-.footerCont h3{
-	display:flex;
-	margin:1%;
-}
-h2{
-	font-size:5vh;
-	margin:5% 0;
-}
-.icoRank{
-	display:inline;
-	height:40px;
-	width:auto;
 }
 #infoPersonal{
 	height:75vh;
@@ -65,10 +140,7 @@ h2{
 	display:block;
 }
 
-title{
-	visibility:hidden;
-	/*display:none;*/
-}
+
 #imgPerfil{
 	border-radius:5px;
 	width:auto;
@@ -81,45 +153,28 @@ title{
       transition-duration: 0.5s;
 	  height:20em;
 }
-
-h1{
-	width:90%;
-	margin:auto;
-	text-align:center;
-	font-size: 2em;
-	text-shadow: 0px 0px 15px white;
- }
-nav{
-	position:fixed;
+footer {
+	padding:10%;
+	grid-area: footer;
+}
+.footerCont{
+	padding:auto;
 	display:flex;
-	flex-direction:column;
-	top:0.09%;
-	background-color:rgba(46, 150, 99,.6);
-	border-radius:10px;
-	font-size: 1.2em;
-	width:15%;
-	margin: 2%;
+	justify-content:center;
 }
-nav ol{
-	display:block;
-	padding:1%;
-	background-color:rgb(0,80,201,);
-	border-radius:10px;
-}
-nav li{
-	font-size:90%;
-	margin-top: 5%;
-	text-align:center;
-	
+.footerCont h3{
+	display:flex;
+	margin:1%;
 }
 
-nav li:hover {
-  transition-property: background-color;
-  transition-duration: 1s;
-  border-radius:5px;
-  background: linear-gradient(90deg, rgb(46, 150, 99), rgb(109, 20, 148));
-  color: black;
+.icoRank{
+	display:inline;
+	height:40px;
+	width:auto;
 }
+
+
+
 
  .contContenido{ /* da el color de fondo y caracteristicas a la caja contenedora de cada seccion */
 	 border-radius:5px;
@@ -131,13 +186,7 @@ nav li:hover {
 	 box-shadow: 0px 0px 10px black;
 	 margin-top: 1%;
  }
-body{ /* estilo de fondo*/
-	background:linear-gradient(90deg, rgb(46, 150, 99), rgb(109, 20, 148));
-	/*background-image: url(archive/web-design-website-coding-concept2.png);*/
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-}
+
 
 .main{
 	padding:0 1% 1%;
@@ -153,31 +202,6 @@ body{ /* estilo de fondo*/
 	 height:72vh;
 	 justify-content:center;
  }
-nav h3{
-	text-shadow: 0px 0px 40px black;
-	width:auto;
-	margin:auto;
-	text-align:center;
-	font-size: 2em;
-}
-
-p{
-	font-size:3vh;
-	margin:auto;
-	padding:5%;
-}
-
-
-
-#general{ /* diseño de la estructura de la pagina con grid*/
-	display:grid;
-	grid-template-rows: 8.5rem auto 200px;
-	grid-template-columns: 1.2fr 2fr 2fr 2fr;
-	grid-template-areas:
-		"main main   main   main"
-		"main    main   main   main"
-		"footer footer footer footer";
-}
 
 #general header {
 	display:none;
@@ -192,19 +216,12 @@ p{
 	margin:1% 3%;
 }
 
-#general nav {
-	grid-area: nav;
-	box-shadow: 0px 0px 10px black;
-}
 #general .main {
 	display:flex;
 	flex-direction:column;
 	grid-area: main;
 }
-#general footer {
-	padding:10%;
-	grid-area: footer;
-}
+
 
 
 @media only screen and (max-width: 900px) {
@@ -258,9 +275,11 @@ p{
 	}
 	nav ol{
 		display:none;
+		flex-direction:column;
 	}
 	nav{
-		width:auto;
+		flex-direction:column;
+		width:97%;
 		position:relative;
 		border-radius:0px;
 		/*margin:4% 2%;*/

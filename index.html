@@ -13,9 +13,7 @@
 	
 <body id="body">
 	
-	<div class="franjaAnimada" id="general"> 
-		
-		
+	<div  id="general"> 
 		
 		<header>
 		
@@ -24,10 +22,10 @@
 		</header>
 		
 		
-		 <nav><!-- Comienzo de menu de navegacion-->
+		 <nav id="cambiaMenu"><!-- Comienzo de menu de navegacion-->
 			<h3 onclick="cambiadorMenu(ocultarMenu)">Menú</h3>		
 			<ol id="ocultarMenu">
-			 <li onclick="principal()" >Principal</li>
+			 <li onclick="principal()">Principal</li>
 			 <li onclick="datoPerso()">Datos Personales</li>
 			 <li onclick="fEdu()">Formacion Educativa</li>
 			 <li onclick="refLab()">Referencia laboral</li>
@@ -45,11 +43,11 @@
 			 <div class="contContenido" id="imagenCont">
 				<img id="imgPerfil" src="archive/imagenPerfil.jpg" alt="Imagen de perfil del CV"/>
 				
-					<p id="contenido">Hola, soy Manuel y tengo 31 años.
+				<p id="contenido">Hola, soy <span id="fullname"></span> y tengo 31 años.
 					 Soy un programador Front-end Jr con ganas de emprender un nuevo proyecto.
 					 Mi objetivo es crecer profecionalmente, nutriendome del equipo de trabajo y aportando tambien mis habilidades.</br>
 					 Programo desde los 15 años, y me gustaria consolidar mis conocimientos y desarrollar una carrera en el mundo it.
-					</p>
+				 </p>
 			
 			</div>
 			
@@ -57,6 +55,9 @@
 
 				
 			 <div class="contContenido" id="Habilidades"><h2 class="contenido">Habilidades</h2>
+				<img src="archive/icoJs.png" alt=""  class="icoAnimado"/>
+				<img src="archive/icoCss.png" alt="" class="icoAnimado"/>
+				<img src="archive/icoHtml.png" alt="" class="icoAnimado"/>
 				 <ul class="contenido">
 					 <li><img class="icoRank"src="archive/icoRank3.png"/><p>Conocimientos de Git y Github nivel basico.</p></li>
 					 <li><img class="icoRank"src="archive/icoRank3.png"/><p>Html5 y Css3 Media Queries nivel basico.</p></li>
@@ -94,10 +95,10 @@
 			
 			 <div class="contContenido" id="infoPersonal"><h2 >Información personal</h2>
 				 <ul class="contenido">
-					 <li>Nombre: Manuel Alejandro Bravo.</li>
-					 <li>Nacionalidad: Argentino. </li>
+					 <li>Nombre: <span class="fullname">algomas</span></li>
+					 <li>Nacionalidad/Ciudad:<span id="city">algo</span> </li>
 					 <li>Fecha de nacimiento: 23/1/1992</li>
-					 <li>Direccion: Villar C. 1571</li>
+					 <li>Email:<span id="email">andrea.sørensen@example.com</span></li>
 				 </ul>
 			</div>
 
@@ -117,5 +118,6 @@
 
 	</div>
 			<script type="text/javascript" src="funciones.js"></script>
+			<script src="datos.json"></script>
 </body>
 </html>
