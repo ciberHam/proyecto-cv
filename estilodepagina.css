@@ -10,9 +10,18 @@
 	transition-property: display;
     transition-duration: 0.5s;
 }
+
+.desplazar{
+	display:flex;
+	margin:0 auto;
+	padding:0 1%;
+	text-align:center;
+	color: rgb(0,0,0);
+}
 body{ /* estilo de fondo*/
-	background:linear-gradient(90deg, rgb(46, 150, 99), rgb(109, 20, 148));
-	/*background-image: url(archive/web-design-website-coding-concept2.png);*/
+
+	/*background:linear-gradient(90deg, rgb(46, 150, 99), rgb(109, 20, 148));*/
+	background-image: url(archive/web-design-website-coding-concept2.png);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -23,7 +32,7 @@ title{
 }
 #general{ /* diseño de la estructura de la pagina con grid*/
 	display:grid;
-	grid-template-rows: 8.5rem auto 200px;
+	/*grid-template-rows: 8.5rem auto 200px;*/
 	grid-template-columns: 1.2fr 2fr 2fr 2fr;
 	grid-template-areas:
 		"main main   main   main"
@@ -37,25 +46,27 @@ nav{ /* estilo de menu de nav*/
 	display:flex;
 	top:0.09%;
 	right:0.3%;
-	background-color:rgba(46, 150, 99,.6);
+	background-color:rgba(43, 44, 45,1);
 	border-radius:10px;
 	font-size: 1.2em;
 	width:15%;
 	margin: 2%;
 }
 nav ol{
+	width:70%;
 	display:flex;
 	flex-direction:row;
 	padding:auto;
-	background-color:rgb(0,80,201,);
+	background-color:rgb(200,200,200);
 	border-radius:10px;
 }
 nav li{
-	display:inline;
+	display:flex;
 	font-size:90%;
 	margin: auto 1%;
 	text-align:center;
-	width:100%;
+	width:90%;
+	padding:0 auto;
 }
 
 nav li:hover {
@@ -63,25 +74,44 @@ nav li:hover {
   transition-duration: 1s;
   border-radius:5px;
   /*background: linear-gradient(90deg, rgb(46, 150, 99), rgb(109, 20, 148));*/
-  color: black;
 }
 nav h3{
 	text-shadow: 0px 0px 40px black;
 	width:auto;
-	margin:auto;
+	margin:0 auto;
 	text-align:center;
 	font-size: 2em;
+	color:white;
 }
 #ocultarMenu{
 	display:none;
 }
 /* fin de estilo de menu navegador*/
 
+#redesCabecera{
+	display:flex;
+	flex-direction:row;
+	position:relative;
+	top:10px;
+	left:70%;
+	background-color:white;
+	border-radius:15px;
+	padding:auto;
+	height:11vh;
+	width:25%;
+}
+#redesCabecera img{
+	height:10vh;
+	width:auto;
+	margin:auto;
+}
 .icoAnimado{
-	position:fixed;
-	display:inline;
+	display:flex;
 	height:auto;
 	width:4em;
+	margin:5%;
+	box-shadow: 0px 0px 20px black;
+	border-radius:10px;
 }
 h1{
 	width:90%;
@@ -91,8 +121,9 @@ h1{
 	text-shadow: 0px 0px 15px white;
  }
 h2{
+	display:inline;
 	font-size:5vh;
-	margin:5% 0;
+	margin:auto 0;
 }
 #fullname{
 	margin:0;
@@ -105,7 +136,7 @@ h2{
 	  align-items: center;
 }
 p{
-	font-size:3vh;
+	font-size:4vh;
 	margin:auto;
 	padding:5%;
 }
@@ -113,7 +144,7 @@ p{
 /* estilo del contenido de la pagina*/
 .contContenido li p{
 	padding: 2%;
-	font-size:1em;
+	font-size:3vh;
 	display:inline;
 	text-align:center;
 
@@ -122,11 +153,7 @@ p{
 	height:75vh;
 	display:block;
 }
-#Habilidades{
-	height:auto;
-	display:flex;
-	flex-direction:column;
-}
+
 #fEducativa{
 	height:75vh;
 	display:block;
@@ -142,19 +169,21 @@ p{
 
 
 #imgPerfil{
-	border-radius:5px;
+	border-radius:15%;
 	width:auto;
-	height:15em;
+	height:20em;
 	display:block;
 	margin: auto;
 }
 #imgPerfil:hover{
 	  transition-property: height;
       transition-duration: 0.5s;
-	  height:20em;
+	  height:25em;
 }
 footer {
-	padding:10%;
+	margin-top:1%;
+	background-color:rgba(43, 44, 45,0.95);
+	padding:5%;
 	grid-area: footer;
 }
 .footerCont{
@@ -163,25 +192,28 @@ footer {
 	justify-content:center;
 }
 .footerCont h3{
+	color:white;
+	margin:auto 1%;
 	display:flex;
-	margin:1%;
+	flex:100%;
+	flex-wrap:wrap;
 }
-
-.icoRank{
-	display:inline;
-	height:40px;
+.divFooter{
+	height:2%;
 	width:auto;
+	margin:0 5%;
 }
 
-
-
-
+#tituloCont{
+	display:flex;
+	margin:auto 0;
+	height:100%;
+	padding:auto;
+}
  .contContenido{ /* da el color de fondo y caracteristicas a la caja contenedora de cada seccion */
 	 border-radius:5px;
-	 
-	background: linear-gradient(90deg, rgb(46, 150, 99), rgb(109, 20, 148));
-
-
+	 display:flex;
+	 background: linear-gradient(/*90deg, rgba(36, 140, 89,0.6)*/rgba(46,109,133,0.95), rgba(99, 10, 138,0.95));
 	 padding:10%;
 	 box-shadow: 0px 0px 10px black;
 	 margin-top: 1%;
@@ -202,7 +234,9 @@ footer {
 	 height:72vh;
 	 justify-content:center;
  }
-
+#linkTercero{
+	color:white;
+}
 #general header {
 	display:none;
 	grid-area: header;
@@ -222,7 +256,11 @@ footer {
 	grid-area: main;
 }
 
-
+#icoCont{
+	 display:flex;
+	 flex-wrap:wrap;
+	 flex:100%;
+}
 
 @media only screen and (max-width: 900px) {
 	*{
@@ -231,7 +269,7 @@ footer {
 	body{
 		justify-content: center;
 		background-size: cover;
-	 }
+	}
 	 #imgPerfil:hover{
 	  transition-property: height;
       transition-duration: 0.5s;
@@ -251,7 +289,8 @@ footer {
 		margin:auto;
 	 }
 	 .contContenido{
-		 margin: 10% 0;
+		 margin:1%0;
+		 flex-wrap:wrap;
 	 }
 	 #imagenCont{
 		margin:0;
@@ -274,26 +313,29 @@ footer {
 	text-align:center;
 	}
 	nav ol{
+		border-radius:0px;
+		margin:0 auto;
 		display:none;
 		flex-direction:column;
 	}
 	nav{
 		flex-direction:column;
-		width:97%;
+		width:100%;
+		margin:0;
 		position:relative;
 		border-radius:0px;
 		/*margin:4% 2%;*/
 	}
 	nav h3{
-		margin:10% auto;
+		margin:3% auto;
 		padding:3%;
 		text-align:center;
 		font-size:1em;
 	}
 	nav li{
-		margin:1%;
+		margin:0 auto;
 		text-align:center;
-		padding:1%;
+		padding:0 auto;
 	}
 	img{
 		width:auto;
@@ -311,6 +353,38 @@ footer {
 		margin:auto;
 		display:block;
 	}
-
+	.desplazar{
+	display:block;
+	margin:0 auto;
+	padding:1% 1%;
+	text-align:center;
+	color: rgb(0,0,0);
+	}
+	#tituloCont{
+		margin:0 auto;	
+	}
+	#redesCabecera{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	position:relative;
+	top:10px;
+	left:85%;
+	background-color:white;
+	border-radius:5px;
+	padding:auto;
+	height:19vh;
+	width:25%;
+	}
+	#redesCabecera img{
+		height:8vh;
+		width:auto;
+		margin:auto;
+	}
 }
 
+@keyframes mover{
+	0%{
+		transform:translate(100%);
+	}
+}
