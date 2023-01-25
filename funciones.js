@@ -17,16 +17,7 @@ async function callback(){
 	const response = await fetch('https://ciberham.github.io/repoDeArchivosJson/datos.json')
 	const json = await response.json();
 	console.log(json["nombreCompleto"])
-	document.getElementById("fullname").innerHTML = json.nombreCompleto;
 	document.getElementById("contenido").innerHTML = json.textoIntro;
-	document.getElementById("email").innerHTML = json.email;
-	document.getElementById("fNacimiento").innerHTML = json.fechaNacimiento;
-	document.getElementById("ciudad").innerHTML = json.ciudad;
-	document.getElementById("pais").innerHTML = json.paisOrigen;
-	document.getElementById("fullname").innerHTML = json.nombreCompleto;
-	document.getElementById("fullname").innerHTML = json.nombreCompleto;
-	document.getElementById("fullname").innerHTML = json.nombreCompleto;
-	document.getElementById("fullname").innerHTML = json.nombreCompleto;
 }
 
 
