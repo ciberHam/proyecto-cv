@@ -54,6 +54,7 @@ nav{ /* estilo de menu de nav*/
 	top:0.09%;
 	right:0.3%;
 	background-color:rgba(43, 44, 45,1);
+	border:solid 2px white;
 	border-radius:10px;
 	font-size: 1.2em;
 	width:15%;
@@ -101,8 +102,6 @@ nav h3{
 	position:relative;
 	top:10px;
 	left:70%;
-	background-color:white;
-	border-radius:15px;
 	padding:auto;
 	height:11vh;
 	width:25%;
@@ -110,8 +109,12 @@ nav h3{
 #redesCabecera img{
 	height:10vh;
 	width:auto;
-	margin:auto;
+	margin:3%;
+	border:solid 2px black;
+	border-radius:50px;
+	box-shadow: 0px 0px 15px black;
 }
+
 .icoAnimado{
 	display:flex;
 	height:auto;
@@ -176,16 +179,27 @@ p{
 
 
 #imgPerfil{
-	border-radius:15%;
+	border-radius:50%;
+	border:solid 4px black;
 	width:auto;
 	height:20em;
 	display:block;
 	margin: auto;
+	box-shadow: 0px 0px 20px black;
 }
 #imgPerfil:hover{
 	  transition-property: height;
       transition-duration: 0.5s;
 	  height:25em;
+}
+#contanto{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	
+}
+#contacto ul{
+	font-size:100%
 }
 footer {
 	margin-top:1%;
@@ -263,11 +277,21 @@ footer {
 	grid-area: main;
 }
 
-#icoCont{
-	 display:flex;
-	 flex-wrap:wrap;
-	 flex:100%;
+
+.contenedorIconos{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	flex:100%;
 }
+#contactoIco img{
+	margin:auto;
+	height:15vh;
+	border-radius:50px;
+	border:solid 5px black;
+	box-shadow: 0px 0px 15px black;
+}
+
 
 @media only screen and (max-width: 900px) {
 	*{
@@ -283,10 +307,14 @@ footer {
 	  height:12em;
 	}
 	#imgPerfil{	
-		height:10em;
-	}
-	#imagenCont img{
-		border-radius:5px;
+		height:10em;	
+		border-radius:50%;
+		border:solid 4px black;
+		width:auto;
+		height:20em;
+		display:block;
+		margin: auto;
+		box-shadow: 0px 0px 20px black;
 		display:block;
 		margin:auto;
 	 }
@@ -296,7 +324,6 @@ footer {
 		margin:auto;
 	 }
 	 .contContenido{
-		 margin:1%0;
 		 flex-wrap:wrap;
 	 }
 	 #imagenCont{
@@ -361,11 +388,11 @@ footer {
 		display:block;
 	}
 	.desplazar{
-	display:block;
-	margin:0 auto;
-	padding:1% 1%;
-	text-align:center;
-	color: rgb(0,0,0);
+		display:block;
+		margin:0 auto;
+		padding:1% 1%;
+		text-align:center;
+		color: rgb(0,0,0);
 	}
 	#tituloCont{
 		margin:0 auto;	
@@ -377,8 +404,6 @@ footer {
 		position:relative;
 		top:-20px;
 		left:28%;
-		background-color:white;
-		border-radius:5px;
 		padding:auto;
 		height:10vh;
 		width:45%;
@@ -387,6 +412,13 @@ footer {
 		height:8vh;
 		width:auto;
 		margin:auto;
+		border-radius:50px;
+	}
+	.contenedorIconos img{
+		margin:auto;
+	}
+	h2{
+		margin:5% auto;
 	}
 }
 
