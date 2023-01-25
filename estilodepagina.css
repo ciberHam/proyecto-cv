@@ -312,7 +312,7 @@ footer {
 	}
 	#imgPerfil{	
 		height:10em;	
-		border-radius:50%;
+		border-radius:6%;
 		border:solid 4px black;
 		width:auto;
 		display:block;
