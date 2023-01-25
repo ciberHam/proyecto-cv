@@ -17,6 +17,7 @@
 #youtube-icon{
 	height:40px;
 	width:40px;
+	margin:auto;
 }
 .desplazar{
 	display:flex;
@@ -284,12 +285,15 @@ footer {
 	flex-wrap:wrap;
 	flex:100%;
 }
-#contactoIco img{
+.contenedorIconos img{
 	margin:auto;
 	height:15vh;
 	border-radius:50px;
 	border:solid 2px black;
 	box-shadow: 0px 0px 15px black;
+}
+#icoCont img{
+	border-radius:10px;
 }
 
 
@@ -414,7 +418,9 @@ footer {
 		border-radius:50px;
 	}
 	.contenedorIconos img{
-		margin:auto;
+		height:8vh;
+		width:auto;
+		margin:2% auto;
 	}
 	h2{
 		margin:5% auto;
