@@ -1,5 +1,6 @@
 ﻿*
 { 
+	text-align:center;
 	font-size:100%;
 	font-family: 'Goldman', cursive;
 	margin: 0px;
@@ -13,11 +14,14 @@
 #youtube-audio{
 	display:bolck;
 	position:relative;
+	height:10vh;
+	margin:auto;
 }
 #youtube-icon{
 	height:40px;
 	width:40px;
 	margin:auto;
+	box-shadow: 0px 0px 0px black;
 }
 .desplazar{
 	display:flex;
@@ -36,11 +40,9 @@ body{ /* estilo de fondo*/
 }
 title{
 	visibility:hidden;
-	/*display:none;*/
 }
 #general{ /* diseño de la estructura de la pagina con grid*/
 	display:grid;
-	/*grid-template-rows: 8.5rem auto 200px;*/
 	grid-template-columns: 1.2fr 2fr 2fr 2fr;
 	grid-template-areas:
 		"main main   main   main"
@@ -92,12 +94,23 @@ nav h3{
 	text-align:center;
 	font-size: 2em;
 	color:white;
+	padding:auto;
 }
 #ocultarMenu{
 	display:none;
 }
 /* fin de estilo de menu navegador*/
-
+.cajaTitulo{
+	flex-wrap:wrap;
+	background-color:rgba(0,0,0,0.6);
+	border-radius: 5px;
+	padding:auto;
+	
+}
+.contContenido h2{
+	width:100%;
+	margin:auto 5% ;
+}
 #redesCabecera{
 	display:flex;
 	flex-direction:row;
@@ -133,24 +146,21 @@ h1{
 	text-shadow: 0px 0px 15px white;
  }
 h2{
-	display:inline;
+	text-align:center;
+	display:block;
 	font-size:5vh;
-	margin:auto 0;
 }
 #fullname{
 	margin:0;
 	padding:0;
 	display:inline;
 }
-.contContenido li{
-	  display: flex;
-	  flex-direction: row;
-	  align-items: center;
-}
 p{
+	display:inline;
 	font-size:4vh;
 	margin:auto;
 	padding:5%;
+	text-align:center;
 }
 
 /* estilo del contenido de la pagina*/
@@ -159,29 +169,14 @@ p{
 	font-size:3vh;
 	display:inline;
 	text-align:center;
-
 }
 #infoPersonal{
 	height:75vh;
 	display:block;
 }
 
-#fEducativa{
-	height:75vh;
-	display:block;
-}
-#Habilidades2{
-	height:75vh;
-	display:block;
-}
-#dLaboral{
-	height:75vh;
-	display:block;
-}
-
-
 #imgPerfil{
-	border-radius:50%;
+	border-radius:5%;
 	border:solid 4px black;
 	width:auto;
 	height:20em;
@@ -194,55 +189,64 @@ p{
       transition-duration: 0.5s;
 	  height:25em;
 }
-#contanto{
-	display:flex;
-	flex-direction:row;
-	flex-wrap:wrap;
-	
-}
-#contacto ul{
-	font-size:100%
-}
+
 footer {
+	display:flex;
 	margin-top:1%;
 	background-color:rgba(43, 44, 45,0.95);
 	padding:5%;
 	grid-area: footer;
+	
 }
 .footerCont{
 	padding:auto;
 	display:flex;
+	flex:100%;
 	justify-content:center;
+	flex-direction:row;
 }
 .footerCont h3{
+	width:auto;
 	color:white;
-	margin:auto 1%;
-	display:flex;
-	flex:100%;
-	flex-wrap:wrap;
+	
 }
 .divFooter{
-	height:2%;
-	width:auto;
+	display:inline;
 	margin:0 5%;
 }
 
 #tituloCont{
-	display:flex;
+	display:inline;
+	width:100%;
 	margin:auto 0;
-	height:100%;
 	padding:auto;
+}
+#sobremi{ /* da el color de fondo y caracteristicas a la caja contenedora de cada seccion */
+	 border-radius:5px;
+	 background: linear-gradient(/*90deg, rgba(36, 140, 89,0.6)*/rgba(46,109,133,0.95), rgba(99, 10, 138,0.95));
+	 padding:10%;
+	 box-shadow: 0px 0px 10px black;
+	 margin-top: 1%;
+}
+.sobremi{
+	display:block;
+	font-size:4vh;
+	margin:auto;
+	padding:5%;
+	text-align:center;
 }
  .contContenido{ /* da el color de fondo y caracteristicas a la caja contenedora de cada seccion */
 	 border-radius:5px;
 	 display:flex;
 	 background: linear-gradient(/*90deg, rgba(36, 140, 89,0.6)*/rgba(46,109,133,0.95), rgba(99, 10, 138,0.95));
-	 padding:10%;
+	 padding:5%;
 	 box-shadow: 0px 0px 10px black;
 	 margin-top: 1%;
  }
 
-
+#imgPort{
+	width:30vh;
+}
 .main{
 	padding:0 1% 1%;
 	border-radius:10px;
@@ -259,6 +263,7 @@ footer {
  }
 #linkTercero{
 	color:white;
+	width:auto;
 }
 #general header {
 	display:none;
@@ -287,8 +292,9 @@ footer {
 	flex:100%;
 }
 .contenedorIconos img{
-	margin:auto;
-	height:15vh;
+	height:20vh;
+	width:20vh;
+	margin:5%;
 	border-radius:50px;
 	border:solid 2px black;
 	box-shadow: 0px 0px 15px black;
@@ -296,8 +302,12 @@ footer {
 #icoCont img{
 	border-radius:10px;
 }
-
-
+#redesCabecera img:hover{
+   box-shadow: 0px 0px 15px rgb(9,224,243);
+}
+.contContenido img:hover{
+   box-shadow: 0px 0px 15px rgb(9,224,243);
+}
 @media only screen and (max-width: 900px) {
 	*{
 		font-size:100%;
@@ -326,10 +336,22 @@ footer {
 		font-size:3vh;
 		display:block;
 		margin:auto;
+		text-align:center;
 	 }
+	 .sobremi{
+		display:block;
+		font-size:3vh;
+		margin:auto;
+		padding:5%;
+		text-align:center;
+	}
 	 .contContenido{
 		 flex-wrap:wrap;
 	 }
+	 .contContenido h2{
+		width:100%;
+		margin:0 ;
+	}
 	 #imagenCont{
 		margin:0;
 		padding:15%;
@@ -351,10 +373,11 @@ footer {
 	text-align:center;
 	}
 	nav ol{
-		border-radius:0px;
+		border-radius:5px 5px 0 0;
 		margin:0 auto;
 		display:none;
 		flex-direction:column;
+		background-color:white;
 	}
 	nav{
 		flex-direction:column;
@@ -362,7 +385,6 @@ footer {
 		margin:0;
 		position:relative;
 		border-radius:0px;
-		/*margin:4% 2%;*/
 	}
 	nav h3{
 		margin:3% auto;
@@ -390,6 +412,13 @@ footer {
 		text-align:center;
 		margin:auto;
 		display:block;
+	}
+	.divFooter{
+		display:inline;
+		height:12vh;
+		width:10vh;
+		margin:auto;
+		padding:5%;
 	}
 	.desplazar{
 		display:block;
@@ -420,11 +449,14 @@ footer {
 	}
 	.contenedorIconos img{
 		height:8vh;
-		width:auto;
+		width:8vh;
 		margin:2% auto;
 	}
 	h2{
 		margin:5% auto;
+	}
+	#imgPort{
+		width:10vh;
 	}
 }
 

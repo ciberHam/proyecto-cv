@@ -30,7 +30,7 @@ callback()
 			if(screen.width < 900){
 				document.getElementById("cambiaMenu").style.width="100%"
 			}
-		document.getElementById("cambiaMenu").style.height="8%"
+		document.getElementById("cambiaMenu").style.height="auto"
 		posicionMenu=true;
 	}else {
 		document.getElementById("ocultarMenu").style.display = "flex";
@@ -38,7 +38,7 @@ callback()
 			if(screen.width < 900){
 				document.getElementById("cambiaMenu").style.width="100%"
 			}
-		document.getElementById("cambiaMenu").style.height="8%"
+		document.getElementById("cambiaMenu").style.height="auto"
 		posicionMenu=false;
 	}
 }

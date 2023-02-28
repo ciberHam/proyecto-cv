@@ -1,29 +1,7 @@
-Bienvenido.
+﻿Bienvenido.
 
-Este archivo representa un equeleto del Cv, para el trabajo final del curso de programacion Frontend dictados por ticmas,
-para argentina programa 4.0.
+En este desarrollo web, estan plasmados los contenidos del aprendizaje dictado por Ticmas.
 
-nombre: Jasse Bryd
-email: jesse.byrd@example.com
-fecha nacimiento: 4/5/1975
-nacionalida: argentino
-direccion: 5062 Stevens Creek Blvd.
-telefono:(428) 809-3466
-
-Hola, soy Jasse Bryd y tengo 48 años.
-
-Soy un programador Fullstack con ganas de emprender un nuevo proyecto,
-y mi objetivo es crecer en mis habilidades nutriendome del equipo de trabajo y aportando tambien mi conocimiento.
-
-mis habilidades son:
-
-git y github: manejor fluido
-html5 y css3 media queries con el uso de framework bootstrap
-javascript y uso de framework angular y react.
-node.js
-
-habilidades secundarias
-
-manejo de ofimatica
-photoshop 
+Pasando por el maquetado, hasta desarrollo de Js para darle funcionalidades y estetica.
+esta web tambien tiene scripts de terceros (se implementaron para el Scroll suave y se incorporó un script para reproducir audio de youtube(autor: Amit Agarwal)).
 
